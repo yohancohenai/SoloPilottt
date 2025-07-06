@@ -1,1 +1,10 @@
-// Entry page - Clerk login and invoice assistant
+import React from 'react';
+
+export default function HomePage() {
+  return (
+    <main>
+      <h1>Welcome to SoloPilot!</h1>
+      <p>Your freelance AI assistant.</p>
+    </main>
+  );
+}
