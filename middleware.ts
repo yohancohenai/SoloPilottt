@@ -1,8 +1,10 @@
-import { authMiddleware } from '@clerk/nextjs';
+// middleware.ts
+import { authMiddleware } from "@clerk/nextjs";
 
-
-export default authMiddleware();
+export default authMiddleware({
+  publicRoutes: ["/"], // 👈 allows homepage access without login
+});
 
 export const config = {
-  matcher: ['/((?!_next|.*\..*).*)', '/(api|trpc)(.*)'],
+  matcher: ["/((?!_next|.*\\..*).*)"], // 👈 necessary for Clerk to work with Next.js
 };
