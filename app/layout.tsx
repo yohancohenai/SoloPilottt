@@ -1,5 +1,3 @@
-import React from 'react';
-
 export default function RootLayout({
   children,
 }: {
@@ -12,4 +10,3 @@ export default function RootLayout({
     </html>
   );
 }
-
